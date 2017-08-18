@@ -225,10 +225,17 @@ footer{
   width:33.33%;
   transition: all 1s ease;
   -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
+  -webkit-filter: brightness(80%);
+  -webkit-filter:blur(2px);
+  filter: blur(2px);
   }
 
 .cities-anchor {
@@ -255,11 +262,13 @@ footer{
   justify-content: center;
   width: 100%;
   background-size: cover;
-  -webkit-filter: brightness(80%);
 }
 
 .hero-box:hover{
   cursor: pointer;
-  -webkit-filter: brightness(140%);
+  -webkit-filter: brightness(120%);
+  -webkit-filter:blur(0);
+  filter:blur(0);
   width: 1100px;
+
 }
