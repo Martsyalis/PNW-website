@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  background:
+  url(https://ak6.picdn.net/shutterstock/videos/10033547/thumb/1.jpg?i10c=img);
+  background-size: cover;
+
+
+  font-family: 'Droid Sans', sans-serif;
+  -webkit-font-smoothing: antialiased
+
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 12px;
+  font-weight: 400;
+  color: red;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.main-nav:before,
+.main-nav:after {
+  content: "";
+  display: table;
+}
+.main-nav:after {
+  clear: both;
+}
+.main-nav {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+
+header {
+  height: 200px;
+
+/*
+background:
+url(https://www.nxworld.net/example/css-scroll-down-button/bg10.jpg)
+center center / cover no-repeat ;
+*/
+}
+
+.header{
+text-align: center;
+vertical-align: center;
+}
+
+
+header a{
+  color: black;
+}
+
+.main-nav {
+  float:right;
+}
+
+.main-nav li{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+footer{
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  .footer-ul {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+
+  .footer-ul li {
+    margin: 0 4px;
+
+  }
+
+/*
+  ========================================
+  Hero
+  ========================================
+*/
+.hero-container{
+
+
+
+}
+
+.main-row{
+  display: flex;
+  height: 550px;
+  width: 100%;
+  margin-right: 60px;
+  overflow: hidden;
+
+}
+
+.hero-box  {
+  display: flex;
+  width:33.33%;
+  transition: all 1s ease;
+  -webkit-transform: translateZ(0);
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  }
+
+.cities-anchor {
+  background:
+  url(http://i.imgur.com/uSTHZf7.gif) no-repeat;
+  background-position: top 0 right -300px;
+}
+
+.culture-anchor {
+  background:
+  url(https://az616578.vo.msecnd.net/files/2017/04/30/636291767341952072572440956_tumblr_npi1ehTQc61to29u9o1_500.gif) no-repeat;
+  background-position: top 0 right -150px;
+}
+
+.nature-anchor{
+  background:
+  url(https://68.media.tumblr.com/5da50c0deb0fd1597271e110a3d5f178/tumblr_ou2jrcU9fR1upvbufo1_540.gif) no-repeat;
+  background-position: top 0  right -150px;
+}
+
+
+.hero-anchors {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-size: cover;
+  -webkit-filter: brightness(80%);
+}
+
+.hero-box:hover{
+  cursor: pointer;
+  -webkit-filter: brightness(140%);
+  width: 1100px;
+}
