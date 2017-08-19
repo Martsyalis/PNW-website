@@ -56,10 +56,11 @@ table {
 */
 
 body {
-  height: 100%;
-  position: relative;
   background: url("../images/background.jpg");
   background-size: cover;
+
+  height: 3000px;
+
   font-family: 'Amatic SC', cursive;
   -webkit-font-smoothing: antialiased
 
@@ -114,6 +115,8 @@ h5 {
 }
 
 
+
+
 /*
   ========================================
   Header
@@ -121,27 +124,32 @@ h5 {
 */
 
 
-
-.primary-header{
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 80px;
+header {
+  height: 200px;
 }
 
 .header{
+position: fixed;
+padding-top:40px;
+text-align: center;
+vertical-align: center;
+position: relative;
 font-family: 'Amatic SC', cursive;
 font-size: 56px;
 }
 
 
+header a{
+  color: black;
+}
+
 .main-nav {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  padding-top: 5px;
-  display: flex;
-  justify-content: flex-end;
+width: 100%;
+position: fixed;
+padding-top: 5px;
+display: flex;
+justify-content: flex-end;
+
 }
 
 .main-nav li{
@@ -156,10 +164,13 @@ font-size: 56px;
   ========================================
 */
 
+
+
 footer{
-  position: absolute;
-  bottom: 0;
+  position:absolute;
   width: 100%;
+  left: 0;
+  bottom: 5px;
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -183,92 +194,3 @@ footer{
   .footer-text {
     margin-left: 10px;
   }
-
-
-/*
-  ========================================
-  Hero
-  ========================================
-*/
-.hero-container{
-margin-bottom: 30px;
-
-
-}
-
-.main-row{
-  display: flex;
-  height: 550px;
-  width: 100%;
-  margin-right: 60px;
-  overflow: hidden;
-
-}
-
-.hero-box-title{
-  color: white;
-}
-
-.hero-box  {
-  display: flex;
-  width:33.33%;
-  transition: all 1s ease;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  -webkit-filter: brightness(80%);
-  -webkit-filter:blur(2px);
-  filter: blur(1px);
-
-  }
-
-.cities-anchor {
-  background:
-  url(http://i.imgur.com/uSTHZf7.gif) no-repeat;
-  background-position: top 0 right -300px;
-}
-
-.culture-anchor {
-  background:
-  url(https://az616578.vo.msecnd.net/files/2017/04/30/636291767341952072572440956_tumblr_npi1ehTQc61to29u9o1_500.gif) no-repeat;
-  background-position: top 0 right -150px;
-}
-
-.nature-anchor{
-  background:
-  url(https://68.media.tumblr.com/5da50c0deb0fd1597271e110a3d5f178/tumblr_ou2jrcU9fR1upvbufo1_540.gif) no-repeat;
-  background-position: top 0  right -150px;
-}
-
-
-.hero-anchors {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-size: cover;
-}
-
-.hero-box:hover{
-  cursor: pointer;
-  -webkit-filter: brightness(120%);
-  -webkit-filter:blur(0);
-  filter:blur(0);
-  width: 1100px;
-}
-
-/*
-  ========================================
-  Secondary Content
-  ========================================
-*/
-
-.secondary-content{
-  height: 700px;
-  margin-bottom: 20px;
-}
