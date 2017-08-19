@@ -61,14 +61,13 @@ body {
   background: url("../images/background.jpg");
   background-size: cover;
   font-family: 'Amatic SC', cursive;
-  -webkit-font-smoothing: antialiased
-
 }
 
 a {
   color: black;
   text-decoration: none;
 }
+
 a:hover{
   cursor: pointer;
 }
@@ -83,17 +82,21 @@ h1 {
   font-size: 36px;
   line-height: 44px;
 }
+
 h2 {
   letter-spacing: 3px;
   font-size: 36px;
   line-height: 44px;
 }
+
 h3 {
   font-size: 21px;
 }
+
 h4 {
   font-size: 18px;
 }
+
 h5 {
   font-family: 'Amatic SC', cursive;
   font-size: 24px;
@@ -120,8 +123,6 @@ h5 {
   ========================================
 */
 
-
-
 .primary-header{
   display: flex;
   justify-content: center;
@@ -130,8 +131,8 @@ h5 {
 }
 
 .header{
-font-family: 'Amatic SC', cursive;
-font-size: 56px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 56px;
 }
 
 
@@ -166,23 +167,20 @@ footer{
 }
 
 
-  .footer-ul {
-    margin-right: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.footer-ul {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  }
+.footer-ul li {
+  margin: 0 4px;
+}
 
-
-  .footer-ul li {
-    margin: 0 4px;
-
-  }
-
-  .footer-text {
-    margin-left: 10px;
-  }
+.footer-text {
+  margin-left: 10px;
+}
 
 
 /*
@@ -190,10 +188,9 @@ footer{
   Hero
   ========================================
 */
+
 .hero-container{
 margin-bottom: 30px;
-
-
 }
 
 .main-row{
@@ -202,7 +199,6 @@ margin-bottom: 30px;
   width: 100%;
   margin-right: 60px;
   overflow: hidden;
-
 }
 
 .hero-box-title{
@@ -222,10 +218,8 @@ margin-bottom: 30px;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   -ms-transition: all 1s ease-out;
-  -webkit-filter: brightness(80%);
-  -webkit-filter:blur(2px);
-  filter: blur(1px);
-
+  filter: brightness(80%);
+  filter: contrast(100%);
   }
 
 .cities-anchor {
@@ -256,15 +250,14 @@ margin-bottom: 30px;
 
 .hero-box:hover{
   cursor: pointer;
-  -webkit-filter: brightness(120%);
-  -webkit-filter:blur(0);
-  filter:blur(0);
+  filter: brightness(120%);
+  filter: contrast(110%);
   width: 1100px;
 }
 
 /*
   ========================================
-  Secondary Content
+  Secondary Page Content
   ========================================
 */
 
